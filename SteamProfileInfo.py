@@ -4,9 +4,17 @@ import sys
 import webbrowser
 from lxml import html
 
+
+print "******************************************************************"
+print "**********                                              **********"
+print "**********              SteamProfileInfo                **********"
+print "**********             By Jordan Bottrell               **********"
+print "**********                  4/28/2017                   **********"
+print "**********                                              **********"
+print "******************************************************************"
 name = ''
 while (name!= "quit"):
-    name = raw_input("> Enter your Steam Profile URL\n")
+    name = raw_input("> Enter your Steam Profile URL (type 'quit' to exit)\n")
     if name == "quit":
         sys.exit()
     else:

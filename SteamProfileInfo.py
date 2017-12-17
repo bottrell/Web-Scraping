@@ -26,14 +26,6 @@ while (name!= "quit"):
 
             page = requests.get(fullURL)
             tree = html.fromstring(page.content)
-
-#<div title="buyer-name">Carson Busses</div>
-#<span class="item-price">$29.95</span>
-#This will create a list of buyers:
-#buyers = tree.xpath('//div[@title="buyer-name"]/text()')
-#This will create a list of prices
-#prices = tree.xpath('//span[@class="item-price"]/text()')
-
             codeInfo = tree.xpath('//code/text()')
 
 #codeInfo[4] is steamID 64
